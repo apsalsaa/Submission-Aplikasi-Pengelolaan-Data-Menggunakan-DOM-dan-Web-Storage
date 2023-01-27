@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="rgba(233, 61, 107, .7)" />
+  
+  <title>Bookshelf Apps</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="top-bar"></nav>
+  
+  <div class="content">
+    <div class="col-1">
+      <div class="user-information my-container">
+        <h1 class="user-name">Salsa's Library</h1>
+        <ul>
+          <li>
+            <p>Total</p>
+            <h4 id="total">10</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+    <div class="col-2">
+      <div class="my-container welcome">
+        <h1>Bookshelf Apps</h1>
+        <p>Bookmarks for your reading list</p>
+        <div class="my-icon">
+          <div class="add-book" id="add-book">
+          <i class="gg-play-list-add"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-book">
+        <div class="reading" id="reading">
+          <h4 class="">Reading</h4>
+        </div>
+        
+         <div class="read" id="read">
+          <h4>Already Read</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="modal">
+        <section class="my-container">
+            <h2>Add a New Book</h2>
+            <form id="form">
+                <div class="input-group">
+                    <input type="text" id="title" placeholder="Judul Buku" class="input-form"
+                        maxlength="120" pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <input type="text" id="author" placeholder="Author" class="input-form"
+                        maxlength="60" pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <input type="number" id="year" placeholder="Year" class="input-form"
+                        class="input-form" min="1900" max="3000" />
+                </div>
+                <div class="button-group">
+                    <button type="reset" class="cancel" id="cancel">Cancel</button>
+                    <button type="submit" id="save">Done</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+
+
+  <script src="./storage.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
